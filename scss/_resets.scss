@@ -6,7 +6,7 @@
     box-sizing: border-box;              // Respeito ao tamanho das caixas, assim não somará quando adicionado paddings
     list-style: none;                   // Remoção dos pontos da lista
     text-decoration: none;             // Remoção das marcações de links
-	font-family: 'Lato', sans-serif;  // Font mais utilizada como padrão
+    font-family: 'Inter', sans-serif; // Font mais utilizada como padrão
 }
 
 img {
@@ -20,9 +20,14 @@ html {
 html,
 body {
     overflow-x: hidden;           // Não permite barra lateral Horizontal
+    background-color: black;
 }
 
 button {
     background-color: transparent;  // Elimina a cor do botão
     cursor: pointer;               // Mãosinha
+
+    &[disabled] {
+        cursor: not-allowed
+    }
 }

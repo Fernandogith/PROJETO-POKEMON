@@ -6,6 +6,14 @@
     justify-content: $justify;
 }
 
+@mixin centerTotalFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
 // ---- Responsividade
 @mixin responsive($ScreenWidth){
     @media(max-width: $ScreenWidth) {

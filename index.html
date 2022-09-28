@@ -9,14 +9,67 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     
     <!-- Colocar aqui junto do titulo as configurações de meta de compartilhamento -->
     <title>Projeto Pokemon</title>
 </head>
 <body>
-    <h1>Start</h1>
+    <h1>Who is that Pokémon?</h1>
+    <h2>Select your Pokémon</h2>
+    <h3>Bulbasaur</h3>
+
+    <div class="tag blue-tag">
+        <div class="icon">
+            <img src="img/bag-red.svg" alt="">
+        </div>
+        <span>pokedex</span>
+    </div>
     
+    <div class="search">
+        <input type="text" placeholder="Search name or code">
+        <button type="button">
+            <img src="img/icon-search.svg" alt="">
+        </button>
+    </div>
+
+    <button class="type-filter ghost">
+        <div class="icon">
+            <img src="img/icon-types/ghost.svg" alt="">
+        </div>
+        <span>Ghost</span>
+    </button>
+    
+    <button class="card-pokemon dragon">
+        <div class="image">
+            <img src="img/bulbasaur.svg" alt="">
+        </div>
+        <div class="info">
+            <div class="text">
+                <span>#001</span>
+                <h3>Bulbasaur</h3>
+            </div>
+            <div class="icon">
+                <img src="img/icon-types/grass.svg" alt="">
+            </div>
+        </div>
+    </button>
+
+    <span class="tag-type fire">Fire</span>
+
+    <button class="btn-load-more">Load more Pokémons</button>
+
+    <footer>
+        <div class="container">
+            <div class="text">
+                <h3>Modulo Java Script</h3>
+                <p>Consumindo e exibindo dados de uma API</p>
+            </div>
+            <a href="/">
+                <img src="img/logo-codeboost.svg" alt="">
+            </a>
+        </div>
+    </footer>
 
     <!-- scritps -->
     <script src="js/plugins.js"></script>
