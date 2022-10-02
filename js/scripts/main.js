@@ -1,5 +1,5 @@
 const cardPokemon = document.querySelectorAll('.js-open-details-pokemon');
-const btnCloseModal = document.querySelector('.js-close-details-pokemon')
+const btnCloseModal = document.querySelector('.js-close-details-pokemon');
 
 function openDatailsPokemon() {
     document.documentElement.classList.add('open-modal')
