@@ -9,10 +9,9 @@
     &.blue-tag {
         .icon {
             background: rgba(63, 104, 186, 0.15);
-            span {
-                color: #3F67BA;
-
-            }
+        }
+        span {
+            color: #3F67BA;
         }
     }
     .icon {
@@ -539,7 +538,7 @@
     justify-content: center;
     z-index: 2022;
     opacity: 0;
-    pointer-events: none;
+    pointer-events: none; // Utilizado junto com a opacity para que mesmo o item estando em tela de forma invisivel, com o pointer-events: none, ele nao atrapalhará no click dos outros elementos
     transition: all .3s;
 
     &[typePokemonModal="grass"]{
