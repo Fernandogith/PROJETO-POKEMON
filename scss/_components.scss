@@ -74,7 +74,8 @@
     filter: grayscale(100%); // filter: Propriedade do CSS que deixa em Preto e branco
     opacity: 0.6;
     transition: all .3s;
-    &:hover {
+    &:hover, 
+    &.active {
         // Ao passar o mouse
         filter: grayscale(0); // filter: Propriedade do CSS que deixa em Preto e branco, aqui estamos deixando em zero, ou seja, trazendo a cor de volta
         opacity: 1;
@@ -91,7 +92,11 @@
         line-height: 150%;
         color: #ACB9C1;
     }
- 
+ &.all {
+    span {
+        color: var(--blue-primary);
+    }
+ }
     // Aqui estamos mencionando que se a class conter .nomedopokemon também, deverá assumir no span a color mencionada;
     &.ghost {
     span {
@@ -368,6 +373,9 @@
         @include centerTotalFlex;
         margin: 0 auto;
         margin-bottom: 1.4rem;
+        .thumb-img {
+            max-width: 14.2rem;
+        }
         &:after {
             content: "";
             position: absolute;

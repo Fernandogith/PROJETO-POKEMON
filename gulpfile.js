@@ -59,7 +59,7 @@ function gulpJs() {
 function pluginsJs() {
     return gulp
     // Mencionamos quais arquivos devem ser concatenados
-    .src(['./js/lib/aos.min.js' , './js/lib/swiper.min.js'])
+    .src(['./js/lib/axios.min.js', './js/lib/swiper.min.js'])
     // Mencionamos para onde a concatenação deve ir
     .pipe(concat('plugins.js'))
     // Mencionamos onde deve criar o arquivo plugins.js
